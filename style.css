@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: Oxanium, cursive;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+body::before {
+  content: "";
+  background-image: url(/imagens/bg-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.1;
+  outline: none;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: center;
+}
+
+.cabecalho img {
+  width: 10rem;
+  height: 5rem;
+}
+
+.lista-de-personagens {
+  list-style-type: none;
+}
+
+.lista-personagens {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 0.8rem;
+}
+
+.card-de-personagem {
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.card-de-personagem:hover {
+  border-bottom: 2px solid #308da7;
+  transform: scale(1.1, 1.1);
+  opacity: 1;
+}
+
+.lista-personagens:hover .card-de-personagem:not(:hover) {
+  opacity: 0.5;
+}
+
+.selecao-de-personagem h1 {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #308da7;
+}
+
+.campo-de-jogos {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 2rem;
+  margin: 0 10rem 0 10rem;
+}
+
+.jogadores {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.comecar {
+  margin-left: 42%;
+  margin-top: 1.5rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-family: Oxanium, cursive;
+  background-color: #c40000;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.comecar:hover {
+  background-color: #ed3f45;
+}
+
+.flutuante {
+  top: 0;
+  animation: flutuar 2s infinite ease-in-out;
+}
+
+@keyframes flutuar {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.personagem-grande-um img {
+  height: 19rem;
+  /* margin-top: 1rem; */
+}
+
+.persoangem-grande-um img:hover {
+  transform: scale(1.1);
+}
+
+.personagem-grande-dois img {
+  height: 19rem;
+  /* margin-top: 1rem; */
+}
+
+.persoangem-grande-dois img:hover {
+  transform: scale(1.1);
+}
+
+.campo-de-jogos {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  margin-top: 1rem;
+}
+
+.campo-de-jogos p {
+  text-align: center;
+}
+
+.area-de-jogo {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.tabuleiro-do-jogo {
+  display: grid;
+  grid-template-columns: 4rem 4rem 4rem;
+  grid-template-rows: 4rem 4rem 4rem;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  max-width: 16rem;
+}
+
+.tabuleiro-do-jogo span.venceu {
+  background-color: #25a340;
+}
+
+.tabuleiro-do-jogo span {
+  background-color: #308da7;
+  cursor: pointer;
+  display: grid;
+  place-content: center;
+  font-size: 5rem;
+  padding-top: 0.5rem;
+}
+
+.escolha-um {
+  align-items: center;
+  margin-top: 02%;
+}
+
+.escolha-dois {
+  align-items: center;
+  margin-top: 02%;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>X-Men Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans&family=Oxanium:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <img class="logo" src="/imagens/logo.svg" alt="Logo X-Men" />
+    </header>
+    <main class="principal">
+      <section class="selecao-de-personagem">
+        <h1>Bem-vindo a sala de treinamento!</h1>
+        <ul class="lista-de-personagens lista-personagens">
+          <li
+            class="card-de-personagem selecaoUm"
+            id="ciclope"
+            data-name="Ciclope"
+          >
+            <img src="/imagens/card-ciclope.jpg" alt="card-ciclope" />
+          </li>
+          <li
+            class="card-de-personagem selecaoDois"
+            id="jean-grey"
+            data-name="Jean Grey"
+          >
+            <img src="/imagens/card-jean-grey.jpg" alt="card-jean-grey" />
+          </li>
+          <li
+            class="card-de-personagem"
+            id="lince-negra"
+            data-name="Lince Negra"
+          >
+            <img src="/imagens/card-lince-negra.jpg" alt="card-lince-negra" />
+          </li>
+          <li class="card-de-personagem" id="magneto" data-name="Magneto">
+            <img src="/imagens/card-magneto.jpg" alt="card-magneto" />
+          </li>
+          <li class="card-de-personagem" id="noturno" data-name="Noturno">
+            <img src="/imagens/card-noturno.jpg" alt="card-noturno" />
+          </li>
+          <li class="card-de-personagem" id="tempestade" data-name="Tempestade">
+            <img src="/imagens/card-tempestade.jpg" alt="card-tempestade" />
+          </li>
+          <li class="card-de-personagem" id="vampira" data-name="Vampira">
+            <img src="/imagens/card-vampira.jpg" alt="card-vampira" />
+          </li>
+          <li class="card-de-personagem" id="wolverine" data-name="Wolverine">
+            <img src="/imagens/card-wolverine.jpg" alt="card-wolverine" />
+          </li>
+        </ul>
+      </section>
+      <section class="campo-de-jogos">
+        <div class="jogador-um">
+          <p><span id="jogador-um"></span></p>
+          <div class="flutuacao">
+            <section class="personagem-grande-um">
+              <img
+                class="flutuante personagem-grande-jogador-um"
+                src="/imagens/card-ciclope.png"
+                alt="card-ciclope-grande"
+              />
+            </section>
+            <button class="comecar escolha-um">Vamos duelar?</button>
+          </div>
+        </div>
+        <div class="grande-area-tabuleiro">
+          <button class="comecar batalhar">Batalhem!</button>
+          <br />
+          <div class="area-de-jogo">
+            <div class="tabuleiro-do-jogo" id="tabuleiro-do-jogo">
+              <span data-region="0.0"></span>
+              <span data-region="0.1"></span>
+              <span data-region="0.2"></span>
+              <span data-region="1.0"></span>
+              <span data-region="1.1"></span>
+              <span data-region="1.2"></span>
+              <span data-region="2.0"></span>
+              <span data-region="2.1"></span>
+              <span data-region="2.2"></span>
+            </div>
+          </div>
+        </div>
+        <div class="jogador-dois">
+          <p><span id="jogador-dois"></span></p>
+          <div class="flutuacao">
+            <div class="personagem-grande-dois">
+              <img
+                class="flutuante personagem-grande-jogador-dois"
+                src="/imagens/card-jean-grey.png"
+                alt="card-jean-grey-grande"
+              />
+              <button class="comecar escolha-dois">Pra já !</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
