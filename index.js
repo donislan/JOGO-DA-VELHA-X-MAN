@@ -144,46 +144,6 @@ document.addEventListener("DOMContentLoaded", () => {
     botaoDeRetorno.style.marginLeft = "25%";
     botaoDeRetorno.style.cursor = "wait";
 
-    // botaoDeRetorno.addEventListener("click", () => {
-    //   const cards = document.querySelector(".lista-de-personagens");
-    //   const imagemDeBatalhaUm = document.querySelector(
-    //     ".personagem-grande-jogador-um"
-    //   );
-    //   const imagemDeBatalhaDois = document.querySelector(
-    //     ".personagem-grande-jogador-dois"
-    //   );
-    //   const titulo = document.querySelector(".selecao-de-personagem h1");
-
-    //   cards.style.display = "flex";
-    //   imagemDeBatalhaUm.style.height = "19rem";
-    //   imagemDeBatalhaUm.style.marginTop = "1rem";
-    //   imagemDeBatalhaDois.style.height = "19rem";
-    //   imagemDeBatalhaDois.style.marginTop = "1rem";
-    //   batalhar.style.marginLeft = "42%";
-    //   batalhar.style.marginTop = "1.5rem";
-    //   titulo.innerText = "Escolha seu personagem";
-
-    //   const personagemUm = document.getElementById("jogador-um");
-    //   const personagemDois = document.getElementById("jogador-dois");
-    //   personagemUm.innerText = "";
-    //   personagemDois.innerText = "";
-
-    //   personagens.forEach((personagem) => {
-    //     personagem.classList.remove("selecaoUm", "selecaoDois");
-    //     personagem.disabled = false;
-    //   });
-
-    //   botaoEscolhaUm.style.display = "block";
-    //   botaoEscolhaUm.innerText = "Escolher";
-    //   botaoEscolhaUm.disabled = true;
-
-    //   botaoEscolhaDois.style.display = "block";
-    //   botaoEscolhaDois.innerText = "Escolher";
-    //   botaoEscolhaDois.disabled = true;
-
-    //   botaoDeRetorno.remove();
-    // });
-
     document.body.appendChild(botaoDeRetorno);
 
     function iniciarJogo() {
