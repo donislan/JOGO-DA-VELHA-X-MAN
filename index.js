@@ -42,8 +42,12 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    botaoEscolhaUm.innerHTML = "Chegou a hora!";
-    botaoEscolhaUm.disabled = true;
+    botaoEscolhaUm.style.display = "none";
+    alert(`
+          Escolha do Jogar 1 Realizada!
+          
+          Jogador 2 escolhe agora!
+          `);
 
     personagens.forEach((personagemDoJogadorDois) => {
       personagemDoJogadorDois.addEventListener("click", () => {
@@ -82,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    botaoEscolhaDois.innerText = "De você perder?";
+    botaoEscolhaDois.style.display = "none";
     botaoEscolhaDois.disabled = true;
   });
 
@@ -133,7 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
     titulo.innerText = "Hora de Treinar";
 
     const botaoDeRetorno = document.createElement("button");
-    botaoDeRetorno.textContent = "Menu Principal - Em Obras!";
+    botaoDeRetorno.textContent = "Começar novo jogo";
     botaoDeRetorno.classList.add("comecar");
     botaoDeRetorno.style.transition = "margin-left 1s, margin-top 1s";
     botaoDeRetorno.style.position = "absolute";
@@ -142,7 +146,12 @@ document.addEventListener("DOMContentLoaded", () => {
     botaoDeRetorno.style.transform = "translate(-50%, -50%)";
     botaoDeRetorno.style.transition = "margin-left 1s, margin-top 1s";
     botaoDeRetorno.style.marginLeft = "25%";
-    botaoDeRetorno.style.cursor = "wait";
+
+    botaoDeRetorno.addEventListener("click", function () {
+      location.reload();
+    });
+
+    document.body.appendChild(botaoDeRetorno);
 
     document.body.appendChild(botaoDeRetorno);
 
