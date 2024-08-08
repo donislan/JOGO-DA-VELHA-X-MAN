@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
     imagemDeBatalhaDois.style["margin-top"] = "40%";
 
     batalhar.style.transition = "margin-left 1s, margin-top 1s";
-    batalhar.style["margin-left"] = "37.5%";
+    batalhar.style["margin-left"] = "40%";
     batalhar.style["margin-top"] = "19%";
 
     titulo.style.transition = "font-size 1s";
