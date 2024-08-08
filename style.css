@@ -16,7 +16,7 @@ body {
 
 body::before {
   content: "";
-  background-image: url(/imagens/bg-desktop.jpg);
+  background-image: url(./imagens/bg-desktop.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -84,7 +84,7 @@ body::before {
 }
 
 .comecar {
-  margin-left: 42%;
+  margin-left: 44%;
   margin-top: 1.5rem;
   border-radius: 0.5rem;
   padding: 0.5rem;

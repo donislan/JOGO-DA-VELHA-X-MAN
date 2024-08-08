@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ".personagem-grande-jogador-um"
       );
       const idPersonagemUm = personagemDoJogadorUm.getAttribute("id");
-      imagemPersonagemGrandeUm.src = `/imagens/card-${idPersonagemUm}.png`;
+      imagemPersonagemGrandeUm.src = `./imagens/card-${idPersonagemUm}.png`;
 
       botaoEscolhaUm.disabled = false;
     });
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
         );
 
         const idPersonagemDois = personagemDoJogadorDois.getAttribute("id");
-        imagemPersonagemGrandeDois.src = `/imagens/card-${idPersonagemDois}.png`;
+        imagemPersonagemGrandeDois.src = `./imagens/card-${idPersonagemDois}.png`;
 
         botaoEscolhaDois.disabled = false;
       });
