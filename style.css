@@ -77,6 +77,11 @@ body::before {
   margin: 0 10rem 0 10rem;
 }
 
+.botao-batalhem {
+  display: flex;
+  justify-content: center;
+}
+
 .jogadores {
   display: flex;
   justify-content: center;
@@ -84,7 +89,6 @@ body::before {
 }
 
 .comecar {
-  margin-left: 44%;
   margin-top: 1.5rem;
   border-radius: 0.5rem;
   padding: 0.5rem;
@@ -120,7 +124,6 @@ body::before {
 
 .personagem-grande-um img {
   height: 19rem;
-  /* margin-top: 1rem; */
 }
 
 .persoangem-grande-um img:hover {
@@ -129,7 +132,6 @@ body::before {
 
 .personagem-grande-dois img {
   height: 19rem;
-  /* margin-top: 1rem; */
 }
 
 .persoangem-grande-dois img:hover {

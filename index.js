@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const botaoEscolhaDois = document.querySelector(".escolha-dois");
   const batalhar = document.querySelector(".batalhar");
 
+  batalhar.style.display = "none";
+
   personagens.forEach((personagemDoJogadorUm) => {
     personagemDoJogadorUm.addEventListener("click", () => {
       if (personagemSelecionadoJogadorUm !== null) {
@@ -87,6 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     botaoEscolhaDois.style.display = "none";
+    batalhar.style.display = "block";
     botaoEscolhaDois.disabled = true;
   });
 
@@ -122,14 +125,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     imagemDeBatalhaUm.style.transition = "height 1s, margin-top 1s";
     imagemDeBatalhaUm.style.height = "25rem";
-    imagemDeBatalhaUm.style["margin-top"] = "40%";
+    imagemDeBatalhaUm.style["margin-top"] = "20%";
 
     imagemDeBatalhaDois.style.transition = "height 1s, margin-top 1s";
     imagemDeBatalhaDois.style.height = "25rem";
-    imagemDeBatalhaDois.style["margin-top"] = "40%";
+    imagemDeBatalhaDois.style["margin-top"] = "20%";
 
     batalhar.style.transition = "margin-left 1s, margin-top 1s";
-    batalhar.style["margin-left"] = "40%";
+
     batalhar.style["margin-top"] = "19%";
 
     titulo.style.transition = "font-size 1s";
